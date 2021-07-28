@@ -11,7 +11,7 @@ export default function Home() {
   const [cases, setCases] = useState([]);
 
   useEffect(() => {
-    api.get("cases").then(res => {
+    api.get("cases").then((res) => {
       setCases(res.data);
     });
   }, []);

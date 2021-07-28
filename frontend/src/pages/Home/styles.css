@@ -11,7 +11,7 @@
 }
 
 .home-container header img {
-  height: 64px;
+  height: 80px;
 }
 .home-container header a {
   width: 150px;
@@ -38,7 +38,9 @@
   margin: 40px 0 32px;
   padding: 10px;
   font-size: 18px;
+
   color: #3a3b46;
+
   line-height: 32px;
 }
 
@@ -63,7 +65,7 @@
 }
 
 .home-container ul li {
-  background: #ffffff;
+  background: #f2f3fb;
   padding: 10px 24px 24px;
   border-radius: 8px;
   position: relative;
@@ -72,7 +74,7 @@
 .home-container .case-header {
   text-align: center;
   margin-bottom: 2px;
-  color: #41414d;
+  color: #767889;
 }
 
 .home-container .case-header strong {
@@ -94,7 +96,7 @@
 }
 
 .home-container ul li p {
-  color: #737380;
+  color: #3a3b46;
   line-height: 21px;
   font-size: 16px;
 }
