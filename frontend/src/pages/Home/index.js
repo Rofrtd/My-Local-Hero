@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import "./styles.css";
 
-import heroesImg from "../../assets/heroes.svg";
+import heroesImg from "../../assets/superhero.svg";
 import logoImg from "../../assets/logo.svg";
 import api from "../../services/api";
 
@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <div className="home-container">
       <header>
-        <img src={logoImg} alt="Be the Hero" />
+        <img className="logo" src={logoImg} alt="My local hero" />
         <div className="buttons">
           <Link className="button" to="/login">
             Login
@@ -52,8 +52,9 @@ export default function Home() {
         </div>
         <img src={heroesImg} alt="Heroes" />
       </div>
-      <ul>
-        {cases.map((c) => (
+      <hr className="divider" />
+      <ul className="item-container">
+        {cases.map(c => (
           <li key={c.id}>
             <div className="case-header">
               <strong>{c.title}</strong>
